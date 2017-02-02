@@ -3,7 +3,7 @@ project(breakout)
 
 set(CMAKE_MODULE_PATH "${CMAKE_SOURCE_DIR}/cmake_modules" ${CMAKE_MODULE_PATH})
 
-find_package(SFML 2 COMPONENTS system window graphics audio)
+find_package(SFML 2 REQUIRED COMPONENTS system window graphics audio)
 
 include_directories(
     ${CMAKE_SOURCE_DIR}
