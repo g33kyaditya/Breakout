@@ -2,9 +2,9 @@
 #include "defines.h"
 
 const sf::Color Ball::mColor(sf::Color::Red);
-const float Ball::mSpeed = 6.0;
+const float Ball::mSpeed = 5.0;
 const float Ball::mRadius = 10.0;
-const int Ball::mPointCount = 50;
+const int Ball::mPointCount = 100;
 
 Ball::Ball(float x, float y)
 {
