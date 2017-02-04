@@ -2,7 +2,7 @@
 #include "defines.h"
 
 const sf::Color Ball::mColor(sf::Color::Red);
-const float Ball::mSpeed = 5.0;
+const float Ball::mSpeed = 8.0;
 const float Ball::mRadius = 10.0;
 const int Ball::mPointCount = 100;
 
@@ -27,7 +27,7 @@ void Ball::update()
         mVelocity.x = -mSpeed;
 
     if (getBottom() > HEIGHT)
-        mVelocity.y = -mSpeed;
+        return;
     else if (getTop() < 0)
         mVelocity.y = mSpeed;
 }

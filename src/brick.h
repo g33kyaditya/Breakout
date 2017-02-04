@@ -1,22 +1,21 @@
-#ifndef PADDLE_H
-#define PADDLE_H
+#ifndef BRICK_H
+#define BRICK_H
 
 #include <SFML/Graphics.hpp>
 
-class Paddle {
-    public :
-        Paddle(float x, float y);
+class Brick {
+    public:
+        Brick();
+        Brick(float x, float y);
         static const sf::Color mColor;
-        static const float mSpeed;
-        static const float mWidth;
         static const float mHeight;
+        static const float mWidth;
 
-        sf::Vector2f mVelocity;
+        bool mDestroyed;
         sf::RectangleShape mShape;
 
         void update();
         void render(sf::RenderWindow & window);
-        void processInput();
 
         float getX();   //Returns the left edge's X value
         float getY();
@@ -29,4 +28,4 @@ class Paddle {
 };
 
 
-#endif //PADDLE_H
+#endif  //BRICK_H

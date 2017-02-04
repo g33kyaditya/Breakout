@@ -2,10 +2,9 @@
 #include "defines.h"
 
 const sf::Color Paddle::mColor(sf::Color::Blue);
-const float Paddle::mSpeed = 6.0;
+const float Paddle::mSpeed = 9.0;
 const float Paddle::mWidth = 100;
 const float Paddle::mHeight = 20;
-const int Paddle::mWindowGap = 5;
 
 Paddle::Paddle(float x, float y)
 {
@@ -57,12 +56,12 @@ float Paddle::getWidth()
 
 float Paddle::getLeft()
 {
-    return getX() - mWindowGap;
+    return getX() - VERTICALWINDOWSPACKING;
 }
 
 float Paddle::getRight()
 {
-    return getX() + getWidth() + mWindowGap;
+    return getX() + getWidth() + VERTICALWINDOWSPACKING;
 }
 
 float Paddle::getTop()

@@ -3,6 +3,10 @@
 
 #define WIDTH 800
 #define HEIGHT 600
+#define BRICKSPACING 2
+#define VERTICALWINDOWSPACKING 5
+#define BRICKROWS 7
+#define BRICKCOLUMNS 14
 
 namespace Game {
     template<typename T1, typename T2>

@@ -13,7 +13,6 @@ class Ball {
         static const int mPointCount;
 
         sf::Vector2f mVelocity;
-
         sf::CircleShape mShape;
 
         void update();
