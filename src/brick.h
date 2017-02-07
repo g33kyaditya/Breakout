@@ -2,6 +2,7 @@
 #define BRICK_H
 
 #include <SFML/Graphics.hpp>
+#include <cstdlib>
 
 class Brick {
     public:
@@ -10,6 +11,7 @@ class Brick {
         static const sf::Color mColor;
         static const float mHeight;
         static const float mWidth;
+        static const int mHits;
 
         bool mDestroyed;
         sf::RectangleShape mShape;

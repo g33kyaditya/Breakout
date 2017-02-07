@@ -24,8 +24,10 @@ void solveBallPaddleCollision(Ball& ball, Paddle& paddle) {
 void solveBallBrickCollision(Ball& ball, Brick& brick) {
     if (!(Game::isColliding(ball, brick)))
         return;
-
-    brick.mDestroyed = true;
+    
+    brick.mHits--;
+    if (brick.mHits < 0)
+        brick.mDestroyed = true;
 
     float leftOverlap = ball.getRight() - brick.getLeft();
     float rightOverlap = brick.getRight() - ball.getLeft();
