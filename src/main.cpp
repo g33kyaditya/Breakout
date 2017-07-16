@@ -24,7 +24,7 @@ void solveBallPaddleCollision(Ball& ball, Paddle& paddle) {
 void solveBallBrickCollision(Ball& ball, Brick& brick) {
     if (!(Game::isColliding(ball, brick)))
         return;
-    
+
     brick.mHits--;
     if (brick.mHits < 0)
         brick.mDestroyed = true;
@@ -85,8 +85,8 @@ int main() {
         }
         solveBallPaddleCollision(ball, paddle);
 
-        grid.erase(std::remove_if (std::begin(grid), std::end(grid),        //Beautiful code by
-                     [](const auto& brick) {return brick.mDestroyed;} ),    //Vittorio Romeo
+        grid.erase(std::remove_if (std::begin(grid), std::end(grid),
+                     [](const auto& brick) {return brick.mDestroyed;} ),
                      std::end(grid));
 
 

@@ -4,7 +4,7 @@
 const sf::Color Paddle::mColor(sf::Color::Blue);
 const float Paddle::mSpeed = 9.0;
 const float Paddle::mWidth = 100;
-const float Paddle::mHeight = 20;
+const int Paddle::mHeight = 20;
 
 Paddle::Paddle(float x, float y)
 {

@@ -11,7 +11,7 @@ class Brick {
         static const sf::Color mColor;
         static const float mHeight;
         static const float mWidth;
-        static const int mHits;
+        static int mHits;
 
         bool mDestroyed;
         sf::RectangleShape mShape;

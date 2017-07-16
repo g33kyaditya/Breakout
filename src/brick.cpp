@@ -4,7 +4,7 @@
 const float Brick::mHeight = 20;
 const float Brick::mWidth = 60;
 const sf::Color Brick::mColor = sf::Color::Green;
-const int Brick::mHits = rand() % 4;
+int Brick::mHits = rand() % 4;
 
 Brick::Brick()
 {
